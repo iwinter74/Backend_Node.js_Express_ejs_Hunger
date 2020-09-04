@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+font-family: bannyBold;
+src: url(Banny-BoldRound.woff);
+}
+@font-face {
+font-family: bannyLight;
+src: url(Banny-LightRound.woff);
+}
+@font-face {
+font-family: banny;
+src: url(Banny-Round.woff);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+          
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+main {
+    background: url("header-bg.png") center/cover no-repeat;
+    color: white;
+    padding-bottom: 3em
+}
+main a {
+    color: white;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.navigation1, .navigation2, .navigation {
+display: flex;
+justify-content: space-between;
+}
+#vector img {
+    display: inline-block;
+}
+#vector {
+    text-align: center;
+}
+.navigation1 li, .navigation2 li {
+    padding-right: 5em
+}
+.navigation2 {
+    padding-left: 5em;
+}
+.navigation {
+    padding-top: 2em;
+    padding-left: 5em
+}
+#aside1 {
+transform: rotate(180deg);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#aside1 p {
+   width: 250%;
+   writing-mode: vertical-lr;
+   padding: 5em
+}
+#aside2 a {
+display: block;
+margin-bottom: 5em;
+border:1px solid rgba(255, 255, 255, 0.2);
+width: 50px;
+height: 50px;
+padding: 0.8em;
+border-radius: 50%;
+}
+#aside2 a:first-of-type {
+    margin-top: 10em;
+}
+.hero {
+display: grid;
+grid-template-columns: 10% 80% 10%;
+}
+.hero h1 {
+    font-family: banny;
+    font-size: 6em;
+    letter-spacing: 0.3em;
+    padding-right: 0.3em
+}
+#hungry_container {
+   display: flex;
+}
+#hungry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hungry p {
+line-height: 117%;
+letter-spacing: 0.5em;
+padding-top: 10em;
+padding-bottom: 2em;
+}
+#aside2 {
+    padding-left: 3em
+}
+#yellow_line {
+width: 60px;
+height: 5.11px;
+background: #E8C300;
+border-radius: 50px;
+display: inline-block;
+}
+#book {
+background: #E8C300;
+border-radius: 5px;
+padding: 1em 3.3em;
+margin-right: 2em
+}
+#explore {
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 5px;
+padding: 1em 4em
+}
+#hero_buttons {
+    padding-top: 3em;
+}
+#arrow {
+    display: inline-block;
+    background: white;;
+    margin-bottom: 5em;
+    border:1px solid rgba(255, 255, 255, 0.2);
+    width: 50px;
+    height: 50px;
+    padding: 0.8em;
+    border-radius: 50%;
+    margin-top: 7em;
+    text-align: center;
+    }
+
+footer {
+padding: 5em;
+font-size: 0.8em;
+text-align: center;
+color: rgba(255, 255, 255, 0.5);
+background: black;
+
+}
+strong {
+    font-family: bannyBold;
+    color: rgba(255, 255, 255, 0.8);
+}
+#sailor {
+    display: block;
+    margin: 5em auto;
+}
+#menu h1, #pizza p, #booking h1, #about h1 {
+    font-family: bannyBold;
+}
+#menu h1, #booking h1, #about h1 {
+    font-size: 2em;
+    padding-top: 2em
+}
+#menu span+p {
+    margin-bottom: 3em;
+    line-height: 150%;
+    font-size: 1.3em;
+    padding: 2em 30em;
+}
+#menu article:first-of-type, #menu_list {
+    text-align: center;
+}
+#menu_list a {
+    padding: 1em 4em;
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    color: black;
+    text-decoration: none;
+}
+#menu_list a:last-of-type {
+    border: none
+}
+#menu article:nth-of-type(2) {
+    margin-bottom: 2em
+}
+#food_container {
+display: flex;
+}
+.isShown {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3em;
+    margin: 5em
+}
+.isHidden {
+    display: none
+}
+#booking {
+    text-align: center;
+}
+form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2em;
+}
+form input, select {
+background: #E5E5E5;
+border-radius: 5px;
+border: #E5E5E5;
+padding: 1em 4em;
+margin-bottom: 2em;
+color: darkgray;
+display: block;
+width: 140%
+}
+input[type=submit] {
+    padding: 1em 3em;
+    background: #E8C300;
+    border-radius: 5px;
+    color: white;
+    border: #E8C300;
+    margin-bottom: 5em;
+    margin-left: 5em;
+    width: 70%;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: inline-block;
+  
+}
+#form_container {
+    width: 60%;
+    margin: 1em auto;
+}
+#about {
+    display: flex;
+    text-align: center;
+    margin-left: 4em;
+}
+#about article {
+    display: flex;
+    align-items: center;
+}
+#about span+p {
+    margin-bottom: 3em;
+    line-height: 150%;
+    font-size: 1.3em;
+}
+

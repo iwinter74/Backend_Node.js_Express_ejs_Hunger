@@ -1,0 +1,109 @@
+<%-include('./partials/head')%>
+<body>
+    <main>
+    <div class="navigation">
+    <%-include('./partials/navigation1')%>
+    <div id="vector" ><img src="Vector.png" alt=""></div>
+    <%-include('./partials/navigation2')%>
+    </div>
+    <%-include('./partials/hero')%>
+    </main>
+    <section id="menu">
+        <article>
+            <h1>DELICIOUS MENU</h1>
+            <span id="yellow_line"></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+        </article>
+    <article id="menu_list">
+        <a onclick="myFunction(soupes)" href="#soupe">SOUPE</a>
+        <a onclick="myFunction(pizzas)" href="#pizza">PIZZA</a>
+        <a onclick="myFunction(pastas)" href="#pasta">PASTA</a>
+        <a onclick="myFunction(deserts)" href="#desert">DESERT</a>
+        <a onclick="myFunction(wines)" href="#wine">WINE</a>
+        <a onclick="myFunction(beers)" href="#beer">BEER</a>
+        <a onclick="myFunction(drinks)" href="#drinks">DRINKS</a>
+    </article>
+<article class="isHidden" id="pizzas">
+    <%pizzas.forEach(elt => {%>
+    <div id="food_container">
+    <div>
+    <h2><%=elt.name%></h2>
+    <p><%=elt.description%></p>
+    </div>
+    <p><%=elt.price%></p>
+    </div>
+    <%})%>
+</article>
+<article class="isHidden" id="soupes">
+    <%pizzas.forEach(elt => {%>
+    <div id="food_container">
+    <div>
+    <h2><%=elt.name%></h2>
+    <p><%=elt.description%></p>
+    </div>
+    <p><%=elt.price%></p>
+    </div>
+    <%})%>
+</article>
+<article class="isHidden" id="pastas">
+    <%pizzas.forEach(elt => {%>
+    <div id="food_container">
+    <div>
+    <h2><%=elt.name%></h2>
+    <p><%=elt.description%></p>
+    </div>
+    <p><%=elt.price%></p>
+    </div>
+    <%})%>
+</article>
+<article class="isHidden" id="deserts">
+    <%pizzas.forEach(elt => {%>
+    <div id="food_container">
+    <div>
+    <h2><%=elt.name%></h2>
+    <p><%=elt.description%></p>
+    </div>
+    <p><%=elt.price%></p>
+    </div>
+    <%})%>
+</article>
+<article class="isHidden" id="wines">
+    <%pizzas.forEach(elt => {%>
+    <div id="food_container">
+    <div>
+    <h2><%=elt.name%></h2>
+    <p><%=elt.description%></p>
+    </div>
+    <p><%=elt.price%></p>
+    </div>
+    <%})%>
+</article>
+<article class="isHidden" id="beers">
+    <%pizzas.forEach(elt => {%>
+    <div id="food_container">
+    <div>
+    <h2><%=elt.name%></h2>
+    <p><%=elt.description%></p>
+    </div>
+    <p><%=elt.price%></p>
+    </div>
+    <%})%>
+</article>
+<article class="isHidden" id="drinks">
+    <%pizzas.forEach(elt => {%>
+    <div id="food_container">
+    <div>
+    <h2><%=elt.name%></h2>
+    <p><%=elt.description%></p>
+    </div>
+    <p><%=elt.price%></p>
+    </div>
+    <%})%>
+</article>
+
+    </section>
+    <%-include('./partials/footer')%>
+    <script src="main.js"></script>
+</body>
+
+</html>

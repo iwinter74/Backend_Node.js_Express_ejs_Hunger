@@ -1,0 +1,18 @@
+[
+{
+"name": "MENU",
+"url": "/menu"
+},
+{
+"name": "GALERIE",
+"url": "/galerie"
+},
+{
+"name": "EVENTS",
+"url": "/events"
+},
+{
+"name": "CONTACT",
+"url": "/contact"
+}
+]

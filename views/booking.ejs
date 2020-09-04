@@ -1,0 +1,55 @@
+<%-include('./partials/head')%>
+<body>
+    <main>
+    <div class="navigation">
+    <%-include('./partials/navigation1')%>
+    <div id="vector" ><img src="Vector.png" alt=""></div>
+    <%-include('./partials/navigation2')%>
+    </div>
+    <%-include('./partials/hero')%>
+    </main>
+    <section id="booking">
+            <h1>BOOK A TABLE</h1>
+            <span id="yellow_line"></span>
+            <article id="form_container">
+        <form action="">
+            <div>
+            <input placeholder="Name" type="text" name="" id="">
+            <input placeholder="Phone" type="text" name="" id="">
+            <input placeholder="Date(mm/dd)" type="text" name="" id="">
+            </div>
+            <div>
+            <input placeholder="Email" type="text" name="" id="">
+            <div>
+                <select name="" id="">
+                    <option value="people">People</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="more">more</option>
+                </select>
+                </div>
+            <div>
+            <select name="" id="">
+                <option value="time">Time</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="other">other</option>
+            </select>
+            </div>
+            </div>
+        </form>
+        <input type="submit" value="Book now">
+        </article>
+    </section>
+    <%-include('./partials/footer')%>
+</body>
+</html>
