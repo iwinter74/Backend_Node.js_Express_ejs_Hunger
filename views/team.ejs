@@ -1,13 +1,37 @@
 <%-include('./partials/head')%>
+
 <body>
     <main>
-    <div class="navigation">
-    <%-include('./partials/navigation1')%>
-    <div id="vector" ><img src="Vector.png" alt=""></div>
-    <%-include('./partials/navigation2')%>
-    </div>
-    <%-include('./partials/hero')%>
+        <div class="navigation">
+            <%-include('./partials/navigation1')%>
+            <div id="vector"><img src="Vector.png" alt=""></div>
+            <%-include('./partials/navigation2')%>
+        </div>
+        <%-include('./partials/hero')%>
     </main>
+    <section id="team_bg">
+        <h1>OUR TEAM</h1>
+        <div id="master_chef">
+            <img src="team.png" alt="">
+            <article id="team">
+                <div>
+                    <h1>MASTER CHEF</h1>
+                    <div>
+                        <span id="yellow_line"></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
+                            a,
+                            tempor magna.</p>
+                        <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                            ligula.
+                            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam
+                            nec sem.
+                            Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
     <%-include('./partials/footer')%>
 </body>
+
 </html>
