@@ -53,7 +53,7 @@ app.post('/new', urlencodedParser, (req, res) => {
     console.log(req.body.email)
     console.log(req.body.phone)
     console.log(req.body.message)
-    res.redirect('/')
+    res.status(201).redirect('/')
     
 })
 
