@@ -2,28 +2,19 @@ const express = require('express')
 const navigation1 = require('./navigation1.json')
 const navigation2 = require('./navigation2.json')
 const pizzas = require('./pizzas.json')
-// const carousel = require('react-multi-carousel')
-// const style = require(`"react-multi-carousel/lib/styles.css"`)
 
-// const responsive = {
-//     desktop: {
-//       breakpoint: { max: 3000, min: 1024 },
-//       items: 3,
-//       slidesToSlide: 3 // optional, default to 1.
-//     },
-//     tablet: {
-//       breakpoint: { max: 1024, min: 464 },
-//       items: 2,
-//       slidesToSlide: 2 // optional, default to 1.
-//     },
-//     mobile: {
-//       breakpoint: { max: 464, min: 0 },
-//       items: 1,
-//       slidesToSlide: 1 // optional, default to 1.
-//     }
-//   };
+const bodyParser = require('body-parser')
 
+ 
 const app = express()
+ 
+// create application/json parser
+var jsonParser = bodyParser.json()
+ 
+// create application/x-www-form-urlencoded parser
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
+ 
+
 app.listen(3000, (req, res) => {
     console.log('Server started')
 })
@@ -54,6 +45,18 @@ app.get('/events', (req, res) => {
 app.get('/contact', (req, res) => {
     res.render('contact', {title:'Contact page', nav1: navigation1, nav2: navigation2})
 })
+
+// POST /login gets urlencoded bodies
+app.post('/new', urlencodedParser, (req, res) => {
+    console.log(req.body)
+    console.log(req.body.name)
+    console.log(req.body.email)
+    console.log(req.body.phone)
+    console.log(req.body.message)
+    res.redirect('/')
+    
+})
+
 app.use((req, res) => {
     res.render('404', {
         title:'not_found', nav1: navigation1, nav2: navigation2})
